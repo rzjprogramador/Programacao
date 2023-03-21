@@ -1,3 +1,0 @@
-# Linguagens
-
-cada linguagem sera representada por uma branch
