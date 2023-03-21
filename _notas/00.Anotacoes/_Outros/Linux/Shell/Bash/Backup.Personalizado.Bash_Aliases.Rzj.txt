@@ -1,0 +1,36 @@
+# MY BASH PERSONALIZADO =========================================
+# OBS: VARIAVEL $HOME == /home/rzj/
+
+# MEUS ALIASES APELIDOS
+alias "dotnet= /home/rzj/dotnet7/dotnet"
+alias v="vim"
+alias n="nvim"
+alias l="lvim"
+
+# VARIAVEIS PERSONALIZADAS RZJ :
+export onvim="$HOME/.config/nvim/"
+export olvim="$HOME/.config/lvim/"
+export ogit="$HOME/..git/"
+export omethods="$HOME/..git/methods"
+export obackend="$HOME/..backend/"
+export odotnet="$HOME/..backend/dotnet/"
+export odart="$HOME/..frontend/..dart/DartBase/"
+export odeno="$HOME/..backend/deno/"
+export odocker="$HOME/..backend/docker/"
+export ogolang="$HOME/..backend/golang/"
+export onode="$HOME/..backend/node/"
+export opython="$HOME/..backend/python/"
+export opersistencia="/$HOME/..backend/persistencia/"
+export oeditores="/$HOME/..backend/editores_treinos/"
+export obackups="/$HOME/..backend/_backups/"
+export opgm="$HOME/..BasePgmGo"
+export onavegador=google-chrome
+
+# FIM ### MY BASH PERSONALIZADO ===================================
+
+# VARIAVEIS DE AMBIENTE PACOTES DEV
+export PATH="$HOME/go/bin:$PATH" # GOLANG
+export PATH="$HOME/.poetry/bin:$PATH" # POETRY PYTHON
+export PATH="$PATH:/usr/lib/dart/bin" # DART
+export PATH="$PATH:~/development/flutter/bin" # FLUTTER
+
