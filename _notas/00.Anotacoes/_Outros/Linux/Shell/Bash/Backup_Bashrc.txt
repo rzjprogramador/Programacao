@@ -43,7 +43,9 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-force_color_prompt=yes
+
+# VARIAVEL QUE FORCA COR NOS PROMPTS TERMINAIS - DESCOMENTE SE NAO PRECISAR
+# force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -130,43 +132,31 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-# CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
-stty -ixon
-
-# RESTANTE DE CONFIGURACOES PERSONALIZADAS ESTA NO ARQUIVO .BASH_ALIASES
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
-# MY BASH PERSONALIZADO =========================================
-# OBS: VARIAVEL $HOME == /home/rzj/
-
-# MEUS ALIASES APELIDOS
-alias "dotnet= /home/rzj/dotnet7/dotnet"
-alias v="vim"
-alias n="nvim"
-alias l="lvim"
-
-# VARIAVEIS PERSONALIZADAS RZJ :
-export onvim="$HOME/.config/nvim/"
-export olvim="$HOME/.config/lvim/"
-export ogit="$HOME/..git/"
-export omethods="$HOME/..git/methods"
-export obackend="$HOME/..backend/"
-export odotnet="$HOME/..backend/dotnet/"
-export odart="$HOME/..frontend/..dart/DartBase/"
-export odeno="$HOME/..backend/deno/"
-export odocker="$HOME/..backend/docker/"
-export ogolang="$HOME/..backend/golang/"
-export onode="$HOME/..backend/node/"
-export opython="$HOME/..backend/python/"
-export opersistencia="/$HOME/..backend/persistencia/"
-export oeditores="/$HOME/..backend/editores_treinos/"
-export obackups="/$HOME/..backend/_backups/"
-export opgm="$HOME/..BasePgmGo"
-export onavegador=google-chrome
-
 # VARIAVEIS DE AMBIENTE PACOTES DEV
 export PATH="$HOME/go/bin:$PATH" # GOLANG
 export PATH="$HOME/.poetry/bin:$PATH" # POETRY PYTHON
 export PATH="$PATH:/usr/lib/dart/bin" # DART
 export PATH="$PATH:~/development/flutter/bin" # FLUTTER
+
+# RESTANTE DE CONFIGURACOES PERSONALIZADAS ESTA NO ARQUIVO .BASH_ALIASES
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# ==============================================================================================
+
+# *** UNICAS LINHAS ADD NO .BASHRC ***
+# *** a extensao bash_person_rzj ficara com backup no github
+
+# ==== CONFIGURACOES PERSONALIZADAS BASH PUXADAS DE :: Personal_Bash/.bash_person_rzj
+# include .bashrc if it exists *** VERIFICAR SE O ARQUIVO EXIST : 
+
+if [ -f $HOME/Personal_Bash/.bash_person_rzj ]; then
+    . $HOME/Personal_Bash/.bash_person_rzj
+fi
+
+# CLAUSULA stty ADICIONAR ESTA LINHA SOMENTE NO .BASHRC, PARA ACEITAR ATALHOS MAPEADOS VIM :
+stty -ixon
+
+# FIM PERSONALIZACAO BASHRC -- RESTANTE NO BASH PERSONALIZADO ===============
+# ==============================================================================================
+
 
