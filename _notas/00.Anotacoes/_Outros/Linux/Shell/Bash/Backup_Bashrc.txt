@@ -143,8 +143,12 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 # ==============================================================================================
 
-# *** UNICAS LINHAS ADD NO .BASHRC ***
-# *** a extensao bash_person_rzj ficara com backup no github
+# *** BASHRC PERSONALIZADO ***
+# Para funcionar este arquivo no .bashrc add estas chamadas:
+# Repo Personal_Bash : (git clone https://github.com/rzjprogramador/Personal_Bash)
+# faça o clone deste repo na raiz do home linux e adicione no .bashrc estas linhas que chamam este repo clonado:
+
+#  INSERIR NO .BASHRC:
 
 # ==== CONFIGURACOES PERSONALIZADAS BASH PUXADAS DE :: Personal_Bash/.bash_person_rzj
 # include .bashrc if it exists *** VERIFICAR SE O ARQUIVO EXIST : 
