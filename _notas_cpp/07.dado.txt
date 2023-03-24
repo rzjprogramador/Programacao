@@ -1,0 +1,5 @@
+dado:
+  conceito: "o dado é juncao de >>> informacao - atribuida a uma variavel de um determinado tipo -- assim temos o dado ",
+
+informacao_valor: com escopo_explicito dentro de chaves ex: {"meu texto"}, semValorAinda {}, 
+

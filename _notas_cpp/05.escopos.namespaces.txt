@@ -1,0 +1,5 @@
+
+escopos:
+  namespace: 
+  conceito: o namespace era para destinguir de onde estamos usando.
+  só adicionar antes do comando de saida: std::

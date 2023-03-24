@@ -1,0 +1,10 @@
+
+
+
+numeros:
+numerosInteiros: para inteiro prefira o tipo std::size_t do que inteiro para fins de comparacoes.
+ numerosReais: utilizar double que é mais preciso do que float que arredonda pra cima.
+
+boleano:
+  verdadeiro: "retorna 1",
+  falso: "retorna 0",

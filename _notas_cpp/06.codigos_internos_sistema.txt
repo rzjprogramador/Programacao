@@ -1,0 +1,9 @@
+funcionalidades_internas_sistema:
+  conceito: "codigos que o sistema deixa pronto para uso ex: objetos,funcoes/comandos"
+  como_importar: "#include <iostream>  // desta forma importa o iostream e pode usar dele  a fucao/comando std , cout, etc..."
+
+  atribuicao_a_funcoes_comando: "é com 2vx 2 pontos ex: std:: o que vai entrar",
+
+  funcoes_comando: 
+    paraString: "para usar string temos o comando/funcao std:: string",
+    paraComandoDeSaidaConsole: "std::cout << conteudoQueVaiSair ",

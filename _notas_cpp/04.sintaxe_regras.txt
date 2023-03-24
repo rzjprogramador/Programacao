@@ -1,0 +1,5 @@
+
+sintaxe_regras:
+conceito: "sintaxe sao regras de escrita do idioma linguagem",
+  regras: "apos cada instrucao ponto e virgula",
+  variavel: tipo nome valor

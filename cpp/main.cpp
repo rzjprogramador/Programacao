@@ -21,28 +21,4 @@ int main() {
 }
 
 /*
-
-
-
-
-sintaxe:
-  regras: "apos cada instrucao ponto e virgula",
-  variavel: tipo nome valor
-
-namespace: 
-conceito: o namespace era para destinguir de onde estamos usando.
-só adicionar antes do comando de saida: std::
-
-quebra_de_linha: "<< '\n';",
-
-valores: com escopo_explicito dentro de chaves ex: {"meu texto"}, semValorAinda {}, 
-
-nimeros:
-numerosInteiros: para inteiro prefira o tipo std::size_t do que inteiro para fins de comparacoes.
- numerosReais: utilizar double que é mais preciso do que float que arredonda pra cima.
-
-boleano:
-  verdadeiro: "retorna 1",
-  falso: "retorna 0",
-
 */
