@@ -1,3 +1,0 @@
-arquivos:
-  extensao: ".cpp",
-  arquivo_main: "main.cpp",
