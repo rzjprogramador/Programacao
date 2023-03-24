@@ -1,19 +1,19 @@
-funcao_Comando_De_Sistema:
+objeto_Comando_De_Sistema:
   
-  funcoes_do_sistema:
-    conceito: "codigos que o sistema deixa pronto para uso ex: objetos,funcoes/comandos/clausulas",
+  objeto_do_sistema:
+    conceito: "o objeto do sistema tem membros/funcoes que o sistema deixa pronto para uso dentro de objetoDoSistema.",
 
     como_importar: "#include <iostream>  // desta forma importa o iostream e pode usar dele  a fucao/comando std , cout, etc...",
 
-    sinonimos: [ "funcaoDoSistema", "clausula", "instrucao", "comando", ],
+    sinonimos: [ "objetoFuncaoDoSistema", "comandoObjeto", ],
 
-    como_usar_declarar: "somente inserir nao precisa de () para executar",
+    como_usar_declarar: "somente inserir o membroObjeto, nao precisa de () para executar",
 
     desencadear_membro: "é com 2vx 2 pontos ex: std:: o que vai usar de std ex: std::string",
     atribuir_inserir_valor: "atribuir valor a comando com << '2 sinal de menor'",
 
 
-  membros_de_funcoes_de_sistema_comando:
+  membros_de_objeto_do_sistema:
     namespace: "namespace é um objeto membro do comando std e dele desencadeamos o escopo ou tipo que pertence a avariavel a ser argumentada na sua frente. ex: std::string // do comando std vamos usar o membro string", 
     detalhe: "somente o tipo string vem de um comandoDesistema os outros nao.",
     

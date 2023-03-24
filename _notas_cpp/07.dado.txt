@@ -3,3 +3,19 @@ dado:
 
 informacao_valor: com escopo_explicito dentro de chaves ex: {"meu texto"}, semValorAinda {}, 
 
+sinais:
+  atribuicao: 
+    conceito: "atribuicao é passagem ou definicao de valor para a variavel",
+
+    atribuir_valor: "{"valor"} | { false} | {11} //atribua o valor dentro de chaves melhor para comparacoes e evita lentidao.",
+
+    atribuir_sem_valor: "{} // defina chaves vazias, o sistema vai definir um valor zero do tipo da variavel indicada.",
+
+    atribuir_para_comandoObjetoSistema: "<< valor  // atribua com '<< dois sinais de maior'"
+
+  desencadeamento:
+    conceito: "desencadeamento é abrir extrair para uso os membros/funcoes de objetos do proprio ou do sistema.",
+    desencadear_sobre_objetoComandoSistema: ":: utilize 2vezes 2 pontos e extraia o membro.",
+    desencadear_sobre_objetoProprio: ". utilize 1 ponto e extraia o membro.",
+    desencadear_sobre_objetoDeLibsTerceiros: ". utilize 1 ponto e extraia o membro.",
+
