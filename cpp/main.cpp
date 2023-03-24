@@ -21,14 +21,8 @@ int main() {
 }
 
 /*
-compilar_no_term:
-  compilar: g++ arquivo.ext
-  rodar: ./a.out
 
-abandone_legado:
- namespace: nao precisa mais de explicitar using namespace std; , use: std::
- quebra_de_linha_com_endline: "nao use mais endline para quebrar linha, use: << '\n';"
- atribuicao: "sem sinal de igual coloque dentro de chaves"
+
 
 
 sintaxe:

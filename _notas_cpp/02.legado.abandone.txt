@@ -1,0 +1,8 @@
+
+# legado_abandone:
+
+ namespace: nao precisa mais de explicitar using namespace std; , use: std::
+
+ quebra_de_linha_com_endline: "nao use mais endline para quebrar linha, use: << '\n';"
+
+ atribuicao: "sem sinal de igual coloque dentro de chaves"
