@@ -1,5 +1,11 @@
 
 sintaxe_regras:
+
 conceito: "sintaxe sao regras de escrita do idioma linguagem",
-  regras: "apos cada instrucao ponto e virgula",
-  variavel: tipo nome valor
+
+  obrigatorio_ponto_virgula_ao_fim_de_instrucao: "sim",
+
+  declaracao_padrao: "tipo nome valor"
+
+  funcao_principal_entrada_main_aplicacao: "main()"
+  funcao_principal_por_arquivo: "nao tem"
