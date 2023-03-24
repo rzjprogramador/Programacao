@@ -1,0 +1,10 @@
+compilacao:
+  conceito: "o codigo da linguagem utilizado pelo dev é traduzido apra linguagem de maquinaque é o  binario."
+  
+  compilarNomeando: "g++ <arquivo> -o <nome_do_meu_programa_Binario> ",
+  exemplo: "g++ main.cpp -o meuprogramaBinario ",
+  detalhes: "no nome escolhido apra o binario do programa posso adicionar extensao .out por convencao ficando program.out // por padrao senao der nome o sistema criar o binario com o nome a.out",
+  preferencia: "nome do binariod o programa >>> program.out",
+
+outputConsole:
+  paraBinariosCompilados: "./nome_meuprogramaBinario  // Estando na pasta do binario só executar com 'ponto barra nome do binarioGerado' ex: ./meuprogramaBinario.",
