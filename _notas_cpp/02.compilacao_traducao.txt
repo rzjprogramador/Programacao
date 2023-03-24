@@ -1,4 +1,4 @@
-compilacao:
+compilacao_traducao_para_maquina:
   conceito: "o codigo da linguagem utilizado pelo dev é traduzido apra linguagem de maquinaque é o  binario."
   
   compilarNomeando: "g++ <arquivo> -o <nome_do_meu_programa_Binario> ",
