@@ -1,9 +1,9 @@
 
 sintaxe_regras:
 
-conceito: "sintaxe sao regras de escrita do idioma linguagem",
+conceito: "sintaxe são regras de escrita do idioma linguagem",
 
-  obrigatorio_ponto_virgula_ao_fim_de_instrucao: "sim",
+  obrigatorio_ponto_virgula_ao_fim_de_cada_linha_de_codigo: "sim",
 
   declaracao_padrao: "tipo nome valor"
 
