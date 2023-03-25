@@ -1,0 +1,16 @@
+atalhos_vscode:
+
+local_configs: "~/.config/Code/User/keybindings.json",
+
+Modelo: comando: "", atalho_novo: "", atalho_default: "", obs: "",
+
+abrir_e_recolher_terminal: comando: toggle panel visibility, atalho_novo: c-t, atalho_default: c-j, obs: "comando create new terminal só cria o term nao recolhe"
+
+comentar: comando: toggle line comment, atalho_novo: ;;, atalho_default: c-\, obs: ""
+
+split_telas: comando: "split editor", atalho_novo: "c-vv", atalho_default: "", obs: "",
+
+fechar_tela_em_uso: comando: "Close Editor", atalho_novo: "c-q", atalho_default: "c-w", obs: "",
+
+fechar_o_editor: comando: "workbench.close.quit", atalho_novo: "c-k", atalho_default: "c-q", obs: "",
+
