@@ -1,5 +1,9 @@
 comandos:
 
+compilacao:
+  compilar_arquivo_fonte: "g++ arquivo.cpp",
+  rodar_arquivo_fonte_compilado: "./arquivoCompilado",
+
 comandos_de_saida:
   de_funcao: "return ",
   de_erro: "???",
