@@ -1,6 +1,6 @@
 #include <iostream>
 
-int main() {
+int variavel_declaracao_tiposNativos() {
   std::string texto {"meu texto"};
   std::string textoSemValorAinda {};
   int numInteiro {10};
@@ -17,3 +17,7 @@ int main() {
   
   return 1;
 }
+
+/*
+
+*/
