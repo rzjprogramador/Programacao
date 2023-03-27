@@ -4,9 +4,9 @@ atalhos_vscode:
 
 local_configs: "~/.config/Code/User/keybindings.json",
 
-copiar: comando: "copy", atalho_novo: "F3", atalho_default: "c-s-c", obs: "",
+copiar: procurar_por: "copy",comando: "editor.action.clipboardCopyAction",  atalho_novo: "F1", atalho_default: "c-s-c", obs: "se modificado neste comando certo , ainda funciona o c-c",
 
-colar: comando: "editor.action.clipboardPasteAction", atalho_novo: "F4", atalho_default: "c-s-v", obs: "",
+colar: comando: "editor.action.clipboardPasteAction", atalho_novo: "F3", atalho_default: "c-s-v", obs: "continua funcionando o atalho c-s-v",
 
 abrir_e_recolher_terminal: comando: toggle panel visibility, atalho_novo: c-t, atalho_default: c-j, obs: "comando create new terminal só cria o term nao recolhe"
 
@@ -22,3 +22,15 @@ ocorrencia_proxima: comando: "Add Selection To Next Find Match ", atalho_novo: "
 
 ocorrencias_todas: comando: "Change All Ocurrences", atalho_novo: "shif+m", significado: "pesquisa muitos/many, ", atalho_default: "c-F2", obs: "",
 
+===
+
+modificados:
+Show All comandos de f1 para S-F1
+
+test0
+test1
+foo
+
+
+test0test1foo
+foo
