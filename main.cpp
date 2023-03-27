@@ -1,7 +1,5 @@
 #include <iostream>
 
-// using namespace std;
-
 int main() {
   std::string texto {"meu texto"};
   std::string textoSemValorAinda {};
@@ -19,19 +17,3 @@ int main() {
   
   return 1;
 }
-
-// tester
-
-// linha1
-// linha1
-// linha1
-
-
-/*
-
-tester
-tester
-tester
-tester
-
-*/
