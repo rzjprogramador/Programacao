@@ -1,0 +1,10 @@
+comandos:
+
+comandos_de_saida:
+  de_funcao: "return ",
+  de_erro: "???",
+  de_escrita_console: "std::cout",
+  de_loop: "break",
+
+comandos_de_entrada:
+  de_escrita_console: "std::cin",
