@@ -1,0 +1,9 @@
+
+remover_pacotes_programas:
+sudo apt remove PACOTE --purge
+sudo apt autoremove
+sudo apt clean
+sudo apt autoclean
+sudo apt update
+
+---
