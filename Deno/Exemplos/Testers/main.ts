@@ -1,7 +1,7 @@
-import { useCalculos } from "./deps.ts";
+import { modCalculations } from "./deps.ts";
 
 function main() {
-  console.log(useCalculos.soma(10, 5));
+  console.log(modCalculations.sum(10, 5));
 }
 
 main();
