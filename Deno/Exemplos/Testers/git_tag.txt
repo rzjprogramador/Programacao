@@ -1,0 +1,12 @@
+
+# Git_Tag
+criar_tag_anotada: "`git tag v1.0.0 -m "mensagem relese: informacao"`"
+tag_ar_commit: "`git tag v1.0.0 -m "mensagem release: informacao" <hashDoCommit_alvo>  // obs: esta é a melhor forma de tagear`"
+ver todas_tags: "`git tag`"
+ver todas_tags_local: "`git fetch`"
+deletar_todas_tags_locais: "`git tag -l | xargs git tag -d`",
+deletar_todas_tags_remotas: "`git tag -l | xargs -n 1 git push --delete origin`",
+limpar_tags_locais: "`git tag -l | xargs git tag -d`",
+deletar_tag_local: "`git tag -d <nome da tag> // -d de delete`"
+deletar_tag_remota: "`git push origin :refs/tags/prod1.0`"
+subir_tags_anotadas_para_github_remoto: "`git push origin release_ts --follow-tags  // obs: o git nao sobe tags com os push entao use este comando apra subir aa tags anotadas `"
