@@ -1,6 +1,0 @@
-require 'vim-plug'
-require 'settings'
-require 'options'
-require 'keymaps'
-require 'theme'
-require 'coc'
