@@ -36,9 +36,14 @@ narracao: seExistir ? abra . proximaProp
 
 macete: sempre ?. interrogacaoPonto antes de prop que possa nao existir ou ser valida
 
+tratar_retorno:  colocando após a verificacao ?? <o que quer retornarCasoNaoSejaValido os valores do verificado>
+
 */
 
 // verificando se as props existem no uso
 console.log(user?.endereco);
 console.log(obj2?.endereco?.rua);
 console.log(obj2?.endereco?.naoExisteSubKey);
+
+// tratando possivel valor invalido com operador de coalescencia nula ao inves de pegar o null ou undefined
+console.log(obj2?.endereco?.naoExisteSubKey ?? "nao informado");
