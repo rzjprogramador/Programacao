@@ -34,7 +34,7 @@ sintaxe: objeto <?> <.>
 
 narracao: seExistir ? abra . proximaProp
 
-macete: é sempre a interrogacao antes do ponto ex: obj?.prop1
+macete: sempre ?. interrogacaoPonto antes de prop que possa nao existir ou ser valida
 
 */
 
