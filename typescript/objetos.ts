@@ -1,4 +1,4 @@
-// deno-lint-ignore-file no-unused-vars
+// deno-lint-ignore-file no-unused-vars no-explicit-any
 // OBJETOS
 
 const user = {
@@ -11,10 +11,13 @@ const user = {
 };
 
 // Manipulacao Objeto
+/* *************************************************** */
 
 // operador_boleano 'in'  :: verifica se existe a informacao chave key dentro do objeto
 // console.log("nome" in user);
 // console.log("Reinaldo" in user.nome); // TODO: key.value por enquanto da erro.
+
+/* *************************************************** */
 
 // Object.keys(obj) // retorna um vetor com todas chaves do objeto passado
 // console.log(Object.keys(user));
@@ -28,9 +31,14 @@ const user = {
 // Mostrar em JSON estruturas de Objeto com o metodo do Obj JSON :: JSON.stringify(alvo) ex: quando retornado objetos [ Object, Object ]
 // console.log(JSON.stringify(Object.values(user)));
 
+/* *************************************************** */
+
 // DESESTRUTURACAO
 
 /*
+
+onde_pode_usar: a desestruturacao pode ser usada em todo lugar que tenha referencia para um objeto, ex: em copias de objeto, em param de funcoes, dentro de funcoes, classes, etc..ou seja onde tiver usando objeto.
+
 usabilidade: copia ou extrair valores selecionados de um objeto e adicionar em outras variaveis_novas.
 
 extraindo do objeto suas props - obs: dentro de { o que vai ser extraido } = fonte
@@ -44,21 +52,45 @@ dica: quando os nomes das variaveis sao iguais coloque a primeira dentro de {} p
 // const { nome, idade } = user;
 // console.log(nome, idade);
 
+// renomear_variavel_de_objeto , após a chave copiada com : 2ponto indique o novo nome da chave , e use este novo nome dai pra frente
+// const { idade: age } = user;
+// console.log(age);
+
+// valor_padrao_para_prop_copiada:
+const { ...novoUser1 } = user;
+novoUser1.nome = "novo valor para nome";
+// console.log(novoUser1);
+/* *************************************************** */
+
+// desestruturando extraindo prop do objeto passado por param.
+function mostraNomeUser({ nome, idade }: any) {
+  console.log(nome, idade);
+}
+mostraNomeUser(user);
+
+/* Rest *************************************************** */
+
 /*
-Operador rest ...variavelQueCopiaraORestante
+  conceito: Copia de props de objeto ou restante delas
 
-sintaxe: { naoCopie, naoCopie2, ...varRestoCopiado } = desteObjetoFonte // use: varRestoCopiado
+  operador: Operador rest ...3pontos varRecebedoraDoRestante
 
-conceito:  variaveis passadas primeiro separadas por virgula indicam que serao retiradas da copia nao seram copiada ...e apos o operador rest 3 pontos <variavelUQevaiReceber o restante - menos os passados antes que nao serao copiados>.
+  sintaxe: { naoCopie, naoCopie2, ...varRestoCopiado } = desteObjetoFonte // use: varRestoCopiado
 
- aplicabilidade: retirar, copiar alguma prop do objeto copiado
- dica: só sera copiado o que tiver após os 3 pontos para a variavelNova criada após estes 3 poontos, os props passadas anets dos 3 pontos nao serao copiadas.
+  aplicabilidade: copiar objeto, com todas ou algumas props.
 
+  copiar_objeto_inteiro : use só os 3pontos e nome da var que vai receber o copiado.
+
+  remover_da_copia_algumas_props: separe em virgulas antes dos 3pontos o que nao sera copiado.
 */
 
 // const { nome, ...resto } = user; // ex: aqui o que tiver em nome nao sera copiado
 // console.log(resto);
 
-// ex: aqui nome e endereco nao sera copiado para a nova variavel resto que ficou com o restante
-const { nome, endereco, ...resto } = user;
-console.log(resto);
+// copiando objeto inteiro
+// const { ...copiaInteira } = user;
+// console.log(copiaInteira);
+
+// removendo da copia as props nome, endereco e copiando para a var reesto o restante
+// const { nome, endereco, ...resto } = user;
+// console.log(resto);
