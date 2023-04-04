@@ -1,5 +1,5 @@
-import { ConceitoExemplo } from "./../utils/contracts/conceitos.ts";
-import { StaticsObjects } from "../utils/statics/statics.objects.ts";
+import { ConceitoExemplo } from "./../../utils/contracts/conceitos.ts";
+import { StaticsObjects } from "../../utils/statics/statics.objects.ts";
 
 interface ObjetosArgs {
   nome: string;
