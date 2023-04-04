@@ -75,5 +75,51 @@ const basic_objetos = new Objetos({
     ~~~
     `,
   },
+
+  retornar_todas_chaves: {
+    conceito: "",
+    exemplo: `
+    ~~~
+    // exemplo
+    ~~~
+    `,
+  },
+
+  retornar_todos_valores: {
+    conceito: "",
+    exemplo: `
+    ~~~
+    // exemplo
+    ~~~
+    `,
+  },
+
+  descobrir_tamanho: {
+    conceito: `
+    descobrir tamanho do objeto em chaves
+    - inicia o contadorDeTamanho em 0
+    - define a chave sem valor
+    - percorre - verificando se tem a chave no objeto
+    - verifica: se o objeto tiver a chave da rodada , aumenta o tamanho do contadorDeTamanho.
+    - retorna o contadorDeTamanho atualizado
+`,
+    exemplo: `
+    ~~~
+    // exemplo
+    const objeto4 = { campo1: "valor_campo1", campo2: 10, campo3: true };
+    
+    function tamanhoDoObjeto(obj: any) {
+      let size = 0;
+      let key: any;
+    
+      for (key in obj) {
+        if (obj.hasOwnProperty(key)) size++;
+      }
+      return size;
+    }
+    console.log(tamanhoDoObjeto(objeto4));
+    ~~~
+    `,
+  },
 });
 console.log(basic_objetos);

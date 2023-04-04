@@ -57,5 +57,47 @@ const ts_objetos = new Objetos({
     ~~~
     `,
   },
+
+  retornar_todas_chaves: {
+    conceito:
+      " retorna todas chaves do objeto passado :: em vetor :: metodo: Object.keys( obj )",
+    exemplo: `
+    ~~~
+    // exemplo
+    const objeto4 = { campo1: "valor_campo1", campo2: 10, campo3: true };
+    
+    const todasChavesDoObjeto4 = Object.keys(objeto4);
+    console.log(todasChavesDoObjeto4);
+    ~~~
+    `,
+  },
+
+  retornar_todos_valores: {
+    conceito:
+      "retorna todos os valores do objeto passado - obs: os sub_objetos retornam um objeto com chave e valor. :: metodo: Object.values( obj )",
+    exemplo: `
+    ~~~
+    // exemplo
+    const objeto4 = { campo1: "valor_campo1", campo2: 10, campo3: true };
+
+    const todosValoresDoObjeto4 = Object.values(objeto4);
+    console.log(todosValoresDoObjeto4);
+    ~~~
+    `,
+  },
+
+  descobrir_tamanho: {
+    conceito:
+      "descobrir tamanho do objeto em chaves - transformar as chaves do obj em array e usar o metodo length de arrays.",
+    exemplo: `
+    ~~~
+    // exemplo
+    const objeto4 = { campo1: "valor_campo1", campo2: 10, campo3: true };
+
+    const sizeObjectInKeys = Object.keys(objeto4).length;
+    console.log(sizeObjectInKeys);
+    ~~~
+    `,
+  },
 });
 console.log(ts_objetos);
