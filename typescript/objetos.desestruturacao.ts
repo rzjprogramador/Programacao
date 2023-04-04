@@ -12,15 +12,6 @@ const user = {
 
 // DESESTRUTURACAO
 
-/*
-
-onde_pode_usar: a desestruturacao pode ser usada em todo lugar que tenha referencia para um objeto, ex: em copias de objeto, em param de funcoes, dentro de funcoes, classes, etc..ou seja onde tiver usando objeto.
-
-usabilidade: copia ou extrair valores selecionados de um objeto e adicionar em outras variaveis_novas.
-
-extraindo do objeto suas props - obs: dentro de { o que vai ser extraido } = fonte
-dica: quando os nomes das variaveis sao iguais coloque a primeira dentro de {} para extrair e elimine a segunda ex: de :: const endereco = user.endereco  para const { endereco } = user
-*/
 // const endereco = user.endereco // Forma tradicional
 // const { endereco } = user; // forma moderna
 // console.log(endereco);
@@ -45,10 +36,19 @@ function mostraNomeUser({ nome, idade }: any) {
 }
 mostraNomeUser(user);
 
-/* Rest *************************************************** */
+/* Desestruturacao ***************************************************
+traducao: extracao
+conceito: desestruturacao é extrair membros e recuperar em variaveisInventadas,
+onde_pode_usar: a desestruturacao pode ser usada em todo lugar que tenha referencia para um objeto|array, ex: em copias de objeto, em param de funcoes, dentro de funcoes, classes, etc..ou seja onde tiver usando objeto.
 
-/*
-  conceito: Copia de props de objeto ou restante delas
+usabilidade: copia ou extrair valores selecionados de um objeto e adicionar em outras variaveis_novas.
+
+extraindo do objeto suas props - obs: dentro de { o que vai ser extraido } = fonte
+dica: quando os nomes das variaveis sao iguais coloque a primeira dentro de {} para extrair e elimine a segunda ex: de :: const endereco = user.endereco  para const { endereco } = user
+*/
+
+/* Rest ***************************************************
+  conceito: Copia de estruturas as propriedades isoladas ou o restante delas
 
   operador: Operador rest ...3pontos varRecebedoraDoRestante
 

@@ -1,6 +1,7 @@
 // deno-lint-ignore-file no-unused-vars
 /*
 Desestruturacao de array
+traducao: extrair items do array 
 
 observacao: desestruturacao de array use  colchetes [] ao inves de chaves.
 

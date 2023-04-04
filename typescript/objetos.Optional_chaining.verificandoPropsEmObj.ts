@@ -1,6 +1,6 @@
 // deno-lint-ignore-file no-unused-vars no-explicit-any
 
-// OBJETOS - optionalChain :: verificacao de campos de objeto para uso
+// OBJETOS - Optional_chaining :: encadeamentoOpcional verificacao de campos de objeto para uso
 
 const user = {
   nome: "Reinaldo",
@@ -23,12 +23,15 @@ const obj2 = {
 // console.log(user.endereco ? endereco : "nao existe");
 
 /*
-optionalChain
-conceito: verificacao de campos de objeto para uso.
+Optional_chaining ::
+traducao: encadeamentoOpcional
+categoria: "uso de membros de objeto"
+aplicabilidade: a verificacao é feita somente quando o objeto e seus membros passado como valorDireita 'uso de membros de objeto' se nada tiver usa o ?? e da um outro valorPadrao.
+conceito: verificacao de campos e metodos de objeto para uso.
 
 beneficio: vai verificar se existem as props no objeto usado e se nao existir nao vai travar/crachear a saida do codigo, vai somente retornar undefined se nao existir ou nulo senao tiver valorValido e podemos pegar estes retornos invalidos e fazer algum tratamento.
 
-dica: faça a verificacao optionalChain a cada profundidade do objeto.
+dica: faça a verificacao Optional_chaining a cada profundidade do objeto.
 
 sintaxe: objeto <?> <.>
 
@@ -47,3 +50,6 @@ console.log(obj2?.endereco?.naoExisteSubKey);
 
 // tratando possivel valor invalido com operador de coalescencia nula ao inves de pegar o null ou undefined
 console.log(obj2?.endereco?.naoExisteSubKey ?? "nao informado");
+
+foo
+foofoo
