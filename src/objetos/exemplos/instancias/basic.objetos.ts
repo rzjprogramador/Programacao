@@ -1,4 +1,4 @@
-import { Objetos } from "../api/objetos.ts";
+import { Objetos } from "../../api/objetos.ts";
 
 const basic_objetos = new Objetos({
   nome: "Objetos Basic",
