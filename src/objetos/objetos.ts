@@ -5,6 +5,7 @@ interface ObjetosArgs {
   nome: string;
   extrair_membros: ConceitoExemplo;
   criacao_obj_apartir_de_copia: ConceitoExemplo;
+  pesquisando_no_objeto: ConceitoExemplo;
 }
 
 export class Objetos {
