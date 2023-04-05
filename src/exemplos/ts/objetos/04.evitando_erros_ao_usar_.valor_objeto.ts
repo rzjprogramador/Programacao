@@ -18,6 +18,10 @@ const obj3 = {
   metodo() {
     return "valor do metodo no obj";
   },
+
+  metodoSemValorValido() {
+    return null;
+  },
 };
 
 const recuperaC1 = obj3?.c1;
@@ -28,3 +32,8 @@ console.log(recuperaC2ComPadrao); // de proposito c2 é nulo
 
 const recuperaMetodoObj = obj3?.metodo?.();
 console.log(recuperaMetodoObj);
+
+// Se a prop nao existe - ja vai dar erro no linter - se ele existe mas naoTemvalorValido assume o ?? <valorPadraoAquiPassado>
+const recuperaMetodoNoObjQueNaoExiste = obj3?.metodoSemValorValido?.() ??
+  "Este metodo existe mas :: nao retorna um valor valido :: retorna nulo";
+console.log(recuperaMetodoNoObjQueNaoExiste);
