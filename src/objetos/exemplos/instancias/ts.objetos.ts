@@ -44,7 +44,8 @@ const ts_objetos = new Objetos({
     diferenca spreed adiciona e rest remove`,
 
     detalhe:
-      `rest_spreed : o que for adicionado antes dos ..3pontoVarInventada sera removido, o que for adicionado depois dos ...3pontosObjetoASerCopiado sera adicionado ao novo objeto resultado
+      `rest_spreed : o que for adicionado antes dos ..3pontoVarInventada sera removido, 
+      spreed : o que for adicionado depois dos ...3pontosObjetoASerCopiado sera adicionado ao novo objeto resultado
     diferenca spreed adiciona e rest remove`,
 
     exemplo: `

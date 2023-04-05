@@ -37,3 +37,20 @@ variavelInventada da fonte objeto2
 ```
 
 ---
+
+1. # adicionando_novos_campos_para_a_copia
+   1. conceito: spreed :: o que for adicionado depois dos
+      ...3pontosObjetoASerCopiado sera adicionado ao novo objeto resultado
+      diferenca spreed adiciona e rest remove
+
+```
+/*
+    adicionando_novos_campos_para_a_copia
+    */
+
+    const novoObj1 = { ...objeto2, new1: "v1", new2: "v2" };
+    console.log(novoObj1);
+    // narracao: ...copia tudo de objeto2, e adiciona estes novos campos com estes valores
+```
+
+---
