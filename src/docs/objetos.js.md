@@ -19,3 +19,21 @@ marp: true
        const { campo1 } = objeto1;
        console.log(campo1);
       ```
+
+---
+
+1. # removendo_campos_para_nao_serem_copiados
+   1. conceito: rest_spreed : o que for adicionado antes dos
+      ..3pontoVarInventada sera removido do resultado da copia
+
+```
+/* removendo_campos_para_nao_serem_copiados escolhendo os
+      membros a serem copiados para o novo objeto - de proposito nao copiando o
+      primeiro campo e pegando o resto */
+
+const { campo10, ...resto } = objeto2; const newObject = resto;
+console.log(newObject); // narracao: remove campo10, e copia o resto para esta
+variavelInventada da fonte objeto2
+```
+
+---

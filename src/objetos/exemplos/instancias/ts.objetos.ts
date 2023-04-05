@@ -18,10 +18,10 @@ const ts_objetos = new Objetos({
 
   removendo_campos_para_nao_serem_copiados: {
     conceito:
-      "Criar novo objeto com base copiando o outro ... tem que remover as props do copiado primeiro , ...pegar o resto que deseja e deixar disponivel, criar o novo objeto e atribuir este resto disponivel...importante: só de usar os ...3pontos ja deixa no nome da varRest escolhida os campos no ar disponivel para recuperar.",
+      "rest_spreed : o que for adicionado antes dos ..3pontoVarInventada sera removido do resultado da copia.",
 
     detalhe:
-      `rest_spreed : o que for adicionado antes dos ..3pontoVarInventada sera removido do resultado da copia.`,
+      ``,
 
     exemplo: `
     ~~~
