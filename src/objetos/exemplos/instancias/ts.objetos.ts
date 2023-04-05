@@ -3,7 +3,7 @@ import { Objetos } from "../../entity/objetos.ts";
 const ts_objetos = new Objetos({
   nome: "Objetos Ts",
   extrair_membros: {
-    conceito: "",
+    conceito: "desestruturacao é extrair props de um objeto e deixa-las livre no escopo para reuso, tambem podemos fazer copias do objeto e decidir se nesta copia adicionamos ou removemos campos.",
     exemplo: `
     ~~~
     // exemplo
