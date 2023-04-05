@@ -4,7 +4,8 @@ import { StaticsObjects } from "../../utils/statics/statics.objects.ts";
 interface ObjetosArgs {
   nome: string;
   extrair_membros: ConceitoExemplo;
-  criacao_obj_apartir_de_copia: ConceitoExemplo;
+  removendo_campos_para_nao_serem_copiados: ConceitoExemplo;
+  adicionando_novos_campos_para_a_copia: ConceitoExemplo;
   pesquisando_no_objeto: ConceitoExemplo;
   retornar_todas_chaves: ConceitoExemplo;
   retornar_todos_valores: ConceitoExemplo;

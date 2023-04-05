@@ -16,19 +16,47 @@ const ts_objetos = new Objetos({
     `,
   },
 
-  criacao_obj_apartir_de_copia: {
+  removendo_campos_para_nao_serem_copiados: {
     conceito:
       "Criar novo objeto com base copiando o outro ... tem que remover as props do copiado primeiro , ...pegar o resto que deseja e deixar disponivel, criar o novo objeto e atribuir este resto disponivel...importante: só de usar os ...3pontos ja deixa no nome da varRest escolhida os campos no ar disponivel para recuperar.",
+
+    detalhe:
+      `rest_spreed : o que for adicionado antes dos ..3pontoVarInventada sera removido do resultado da copia.`,
+
     exemplo: `
     ~~~
-    /* Criar novo objeto com base em copia de outro objeto - escolhendo os membros desejados
-    *************************************************** */
-    const objeto2 = { campo10: "vcampo10", campo20: 10 };
+    /*
+    removendo_campos_para_nao_serem_copiados
+    escolhendo os membros a serem copiados para o novo objeto - de proposito nao copiando o primeiro campo e pegando o resto */
 
-    // escolhendo os membros a serem copiados para o novo objeto - de proposito nao copiando o primeiro campo e pegando o resto
-    const { campo10, ...resto } = objeto2; 
+    const { campo10, ...resto } = objeto2;
     const newObject = resto;
     console.log(newObject);
+    // narracao: remove campo10, e copia o resto para esta variavelInventada da fonte objeto2
+
+    ~~~
+    `,
+  },
+
+  adicionando_novos_campos_para_a_copia: {
+    conceito:
+      `o que for adicionado depois dos ...3pontosObjetoASerCopiado sera adicionado ao novo objeto resultado
+    diferenca spreed adiciona e rest remove`,
+
+    detalhe:
+      `rest_spreed : o que for adicionado antes dos ..3pontoVarInventada sera removido, o que for adicionado depois dos ...3pontosObjetoASerCopiado sera adicionado ao novo objeto resultado
+    diferenca spreed adiciona e rest remove`,
+
+    exemplo: `
+    ~~~
+    /*
+    adicionando_novos_campos_para_a_copia
+    */
+
+    const novoObj1 = { ...objeto2, new1: "v1", new2: "v2" };
+    console.log(novoObj1);
+    // narracao: ...copia tudo de objeto2, e adiciona estes novos campos com estes valores
+
     ~~~
     `,
   },

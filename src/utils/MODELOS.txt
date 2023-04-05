@@ -1,10 +1,12 @@
 # Conceito- Exemplos
 
 { 
-  conceito: "", 
+  conceito: "TODO", 
+  detalhe: "TODO", 
   exemplo: `
   ~~~
   // exemplo
+  TODO
   ~~~
   `,
 },

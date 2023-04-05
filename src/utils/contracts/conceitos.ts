@@ -1,2 +1,5 @@
-
-export type ConceitoExemplo = { conceito: string; exemplo: string };
+export type ConceitoExemplo = {
+  conceito: string;
+  detalhe?: string;
+  exemplo: string;
+};
