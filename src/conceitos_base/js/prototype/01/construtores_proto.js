@@ -1,4 +1,6 @@
-// criando Construtores/Tipos Personalizados
+// deno-lint-ignore-file no-unused-vars
+
+// Construtores/Tipos Personalizados
 function Entity2(primeiroNome, sobrenome, idade) {
   this.primeiroNome = primeiroNome;
   this.sobrenome = sobrenome;
@@ -23,19 +25,20 @@ Entity2.metodoEstaticoUppereHanderline =
 const e1 = new Entity2("reinaldo", "zacharias", 45);
 const e2 = new Entity2("gustavo", "eduardo", 13);
 
-console.log(e1, e2);
-console.log(Entity2.prototype);
-console.log(e1.nomeCompleto());
-console.log(
-  "apontam para o mesmo metodo no proto",
-  e1.nomeCompleto === e2.nomeCompleto,
-); // true
-console.log(e1.comment(), e2.comment());
-console.log(
-  "acessando metodoEstatico via Construtor",
-  Entity2.metodoEstaticoUppereHanderline("frase1 frase2 frase3 "),
-);
-console.dir(Entity2); // console.dir mostra os membros do Construtor estaticos e proto
+// console.log(e1, e2);
+// console.log("acessa membros atrelados do construtor", Entity2.prototype);
+// console.log(e1.nomeCompleto());
+// console.log(
+//   "se instancias apontam para o mesmo metodo no proto",
+//   e1.nomeCompleto === e2.nomeCompleto,
+// ); // true
+// console.log(e1.comment(), e2.comment());
+// console.log(
+//   "acessando metodoEstatico via Construtor",
+//   Entity2.metodoEstaticoUppereHanderline("frase1 frase2 frase3 "),
+// );
+// console.dir(Entity2); // console.dir mostra os membros do Construtor estaticos e proto
+// console.log("descobrir nome do construtor da instancia", e1.constructor.name);
 
 /*
 # construtores_tipos_personalizados:
@@ -70,18 +73,30 @@ engine_busca_por_metodos_chamados: "Ela busca no objeto|array, se nao encontra b
 
 criar_membro_no_proto_da_EntidadeObjeto: "usa o .prototype como setter inventa o nomeDoMembro e atribui para ele o que deseja criar no proto dele no caso uma funcao e usa os campos do objeto, importante nomear esta atribuicao e nao fazer anonima para ter acesso a prop. name que devolve o nome do membro criado apra casos de debugger"
 
+membros_disponiveis:
+  construtor: "construtor tem membros Estaticos",
+  instancias: "instancias tem membros na prop. prototype || __proto__.",
+
 membros_mais_usados_Estaticos_Construtor: `
-Construtor.length // retorna o tamanho em propriedades do Construtor
-Construtor.name // retorna o nomeDaEntidadeConstrutor
+
+- tamanho_em_props_no_construtor: "`Construtor.length`",
+- nome_do_construtor : "`Construtor.name`",
+- se_construtores_apontam_para_o_mesmo_prototype_nativo: "`Construtor1.prototype === Construtor2.prototype`",
+
+
 `,
 
-membros_mais_usados_Prototype_InstanciasDoConstrutor: `
-instancia.hasOwnProperty("primeiroNome") // retorna boleano se tem a passada prop. na instancia
-Construtor.prototype.isPrototypeOf(instancia) // isPrototypeOf checa se a instancia passada existe na cadeia de prototipos do ConstrutorReferenciado , doc: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/IsPrototypeOf
+membros_mais_usados_Instancias: `
+
+- se_membro_instancias_apontam_para_mesmo_construtor: "`instancia1.nomeCompleto === instancia1.nomeCompleto` // quer dizer que o metodo esta no proto do construtor",
+
+- contem_a_propriedade_na_instancia: "`instancia.hasOwnProperty("primeiroNome")` // retorna boleano se tem a passada propriedade na instancia",
+
+- instancia_esta_no_proto_do_construtor: "`Construtor.prototype.isPrototypeOf(instancia)` // isPrototypeOf checa se a instancia passada existe na cadeia de prototipos do ConstrutorReferenciado , doc: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Object/IsPrototypeOf",
+
+- descobrir_nome_do_construtor_da_instancia: "`instancia.constructor.name`",
+
 `,
 
-testes_prototype:
-  se_apontam_para_o_mesmo_prototype_nativo: "`meuArray1.prototype === meuArray2.prototype`",
 
-  se_apontam_para_o_mesmo_membro_no_criado_no_prototype_do_objeto: "`e1.metodo // comparar sem executar os metodos // resposta: true === e2.metodo // comparar sem executar os metodos // resposta: true`",
 */
