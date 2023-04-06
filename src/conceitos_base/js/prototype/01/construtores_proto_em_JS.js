@@ -1,11 +1,14 @@
 // deno-lint-ignore-file no-unused-vars
 
 // Construtores/Tipos Personalizados
+
 function Entity2(primeiroNome, sobrenome, idade) {
   this.primeiroNome = primeiroNome;
   this.sobrenome = sobrenome;
   this.idade = idade;
 }
+
+// add membros metodos no proto do construtor criado:
 
 Entity2.prototype.nomeCompleto = function nomeCompleto() {
   return `${this.primeiroNome} ${this.sobrenome}`;
@@ -25,20 +28,32 @@ Entity2.metodoEstaticoUppereHanderline =
 const e1 = new Entity2("reinaldo", "zacharias", 45);
 const e2 = new Entity2("gustavo", "eduardo", 13);
 
-// console.log(e1, e2);
-// console.log("acessa membros atrelados do construtor", Entity2.prototype);
-// console.log(e1.nomeCompleto());
-// console.log(
-//   "se instancias apontam para o mesmo metodo no proto",
-//   e1.nomeCompleto === e2.nomeCompleto,
-// ); // true
-// console.log(e1.comment(), e2.comment());
-// console.log(
-//   "acessando metodoEstatico via Construtor",
-//   Entity2.metodoEstaticoUppereHanderline("frase1 frase2 frase3 "),
-// );
-// console.dir(Entity2); // console.dir mostra os membros do Construtor estaticos e proto
-// console.log("descobrir nome do construtor da instancia", e1.constructor.name);
+/* *************************************************** */
+
+// membros Staticos do construtor
+
+console.log("acessa membros atrelados do construtor", E1.prototype);
+console.log(
+  "acessando metodoEstatico via Construtor",
+  E1.metodoEstaticoUppereHanderline("frase1 frase2 frase3 "),
+);
+
+console.dir(E1); // console.dir mostra os membros do Construtor estaticos e proto
+
+/* *************************************************** */
+
+// membros de Prototype das Instancias
+console.log(e1, e2);
+console.log(e1.nomeCompleto());
+console.log(
+  "se instancias apontam para o mesmo metodo no proto",
+  e1.nomeCompleto === e2.nomeCompleto,
+); // true
+
+console.log(e1.comment(), e2.comment());
+console.log("descobrir nome do construtor da instancia", e1.constructor.name);
+
+/* *************************************************** */
 
 /*
 # construtores_tipos_personalizados:
