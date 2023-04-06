@@ -58,7 +58,7 @@ console.dir(E1); // console.dir mostra os membros do Construtor estaticos e prot
 
 /* *************************************************** */
 
-// membros de Prototype das Instancias
+// membros de Prototype das Instancias.
 console.log(e1, e2);
 console.log(e1.nomeCompleto());
 console.log(

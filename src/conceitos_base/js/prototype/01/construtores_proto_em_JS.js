@@ -30,15 +30,24 @@ const e2 = new Entity2("gustavo", "eduardo", 13);
 
 /* *************************************************** */
 
+// sobreescrevendo metodo que ja tem no proto ...criando ele no proto da instancia o mesmo nome de metodo que tem no seu proto nativo - a engine_js executa o primeiroq eu encontra quando tem o emsmo nome :: obs: importante >> nao recomendavel.
+
+// e1.toString = function toString() {
+//   return `meu texto para mostrar no tostring das instancias ao invez de [object object]`;
+// };
+// console.log("sobreescrevendo metodoProto >> ", e1.toString());
+
+/* *************************************************** */
+
 // membros Staticos do construtor
 
-console.log("acessa membros atrelados do construtor", E1.prototype);
+console.log("acessa membros atrelados do construtor", Entity2.prototype);
 console.log(
   "acessando metodoEstatico via Construtor",
-  E1.metodoEstaticoUppereHanderline("frase1 frase2 frase3 "),
+  Entity2.metodoEstaticoUppereHanderline("frase1 frase2 frase3 "),
 );
 
-console.dir(E1); // console.dir mostra os membros do Construtor estaticos e proto
+console.dir(Entity2); // console.dir mostra os membros do Construtor estaticos e proto
 
 /* *************************************************** */
 
@@ -112,6 +121,12 @@ membros_mais_usados_Instancias: `
 - descobrir_nome_do_construtor_da_instancia: "`instancia.constructor.name`",
 
 `,
+
+- sobreescrevendo_metodo_que_ja_tem_no_proto: recriando ele e atribuindo a instancia o mesmo nome de metodo que tem no seu proto nativo - a engine_js executa o primeiroq eu encontra quando tem o emsmo nome :: obs: importante >> nao recomendavel.
+e1.toString = function toString() {
+  return `meu texto para mostrar no tostring das instancias ao invez de [object object]`;
+};
+console.log("sobreescrevendo metodoProto >> ", e1.toString());
 
 
 */
