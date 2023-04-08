@@ -1,0 +1,18 @@
+[
+  {
+    "nome": "valor_MarretadoMagicoLiteral",
+    "categoria": "valor",
+    "representacao": "literal marretado",
+    "uso": "estatico marretado",
+    "conceito": "é estatico nao vai mudar",
+    "importante": "prefira os valores_dinamicos"
+  },
+  {
+    "nome": "valores_dinamicos",
+    "categoria": "valor",
+    "representacao": "parametroFuncao",
+    "uso": "retorna uma funcaoAnonima queRecebeDadoVariavel )",
+    "conceito": "se de inicio esta passando um marretadoMagicoLiteral, é porque nao sabe o valor que pode vir , e pode torna-lo alternativo dinamico, ao troca-lo por um dinamicoParamFuncao",
+    "importante": "receba no maximo 2 parametros por funcao...se precisar de mais um destes params seja muitos ou seja um ...array"
+  }
+]
