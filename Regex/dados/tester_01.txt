@@ -1,0 +1,4 @@
+ feita: "(\w*\s{0,1}\w*)*" , significado: quero grupos com varias string pode ter 1 espaço e varias strings, ideal_para: eliminar separadores virgulas e peagr o array e fazer o que quiser
+ fase_alvo: Rua foo, 10, cidade: Sao Paulo, SP
+ ---
+ 

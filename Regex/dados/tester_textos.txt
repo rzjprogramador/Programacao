@@ -1,1 +1,0 @@
- Rua foo, 10, cidade: Sao Paulo, SP
