@@ -7,3 +7,6 @@ fechar:
 
 Listar:
   todas_tabs_abertas: ":tabs", tutorial: "https://www.freecodecamp.org/news/learn-linux-vim-basic-features-19134461ab85/#:~:text=To%20directly%20move%20to%20first,%3A%20%24%20vim%20%2Dp%20source.",
+
+:vsp TAB | ARQUIVO -- vai abrir em telaSplit o arquivo escolhido.
+:bn -- muda para proximo buffer
