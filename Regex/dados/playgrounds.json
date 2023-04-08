@@ -1,5 +1,12 @@
 [
   {
-    "playground_regex": "https://regexlearn.com/playground"
+    "nome": "regex101",
+    "categoria": "playground_regex",
+    "link": "https://regex101.com/"
+  },
+  {
+    "nome": "regexlearn",
+    "categoria": "playground_regex",
+    "link": "https://regexlearn.com/playground"
   }
 ]
