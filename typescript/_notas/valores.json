@@ -10,9 +10,9 @@
   {
     "nome": "valores_dinamico_funcao",
     "categoria": "valor",
-    "representacao": "parametroFuncao",
+    "representacao": "param_Referencia_de_Funcao",
     "uso": "retorna uma funcaoAnonima queRecebeDadoVariavel )",
-    "conceito": "se de inicio esta passando um marretadoMagicoLiteral, é porque nao sabe o valor que pode vir , e pode torna-lo alternativo dinamico, ao troca-lo por um dinamicoParamFuncao",
+    "conceito": "se de inicio esta passando um marretadoMagicoLiteral, é porque nao sabe o valor que pode vir , e pode torna-lo alternativo dinamico, ao troca-lo por um param_Referencia_de_Funcao",
     "importante": "receba no maximo 2 parametros por funcao...se precisar de mais um destes params seja muitos ou seja um ...array ou um objeto"
   },
   {
