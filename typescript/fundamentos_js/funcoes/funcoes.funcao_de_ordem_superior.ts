@@ -22,11 +22,20 @@ recebendo-a e retornando a e quem for usar/invocar argumenta esta variavel.
 
 // ao inves de fazer estas 3 funcoes - que duplica, triplica, quadruplica uma varMarretada - faça uma funcao generica que recebe uma funcao e retorna uma funcao onde este fatorVariavel seja o arguemnto em funcao.
 
-const getMultiplier = (multiplier: number) => {
-  return function (aNumber: number) {
-    return aNumber * multiplier;
-  };
-};
+// exemplo_antes_de_refatoracao:
+// const getMultiplier = (multiplier: number) => {
+//   return function (aNumber: number) {
+//     return aNumber * multiplier;
+//   };
+// };
+
+// refactor:
+const getMultiplier = (multiplier: number) => (aNumber: number) =>  aNumber * multiplier;
+
+/**
+ * refatoracao_funcao_shortEncurtando:
+ * trocar_em_funcao_anonima: "{ return :: por :: => arow_function"
+ */
 
 /*
 analise: uma nova funcaoDeOrdemSuperior - que recebe uam funcao - que retorna uma funcaoAnonima que com a mesma assinatura do que seria a funcaoMarretadaSemOrdemSuperior recebendo o mesmo paramAlvo e seu retorno seria este param operando com o variavelParamFuncao recebido na orderFunction
