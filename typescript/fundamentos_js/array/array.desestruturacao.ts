@@ -1,7 +1,7 @@
 // deno-lint-ignore-file no-unused-vars
 /*
 Desestruturacao de array
-traducao: extrair items do array 
+traducao: extrair items do array
 
 observacao: desestruturacao de array use  colchetes [] ao inves de chaves.
 
@@ -15,7 +15,7 @@ observacao: desestruturacao de array use  colchetes [] ao inves de chaves.
 // pega valores de um array e coloca em novas variaveis
 const array1 = [1, 2, 3, 4, 5];
 
-// forma moderna - copiar pros de array
+// forma moderna - copiar props de array
 const [pega1, pega2] = array1;
 // console.log(pega1, pega2);
 
