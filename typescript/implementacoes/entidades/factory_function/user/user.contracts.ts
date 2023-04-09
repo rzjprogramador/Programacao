@@ -1,16 +1,14 @@
-export type UserType = UserArgs;
+type UserType = UserArgs;
 
-export interface UserArgs extends UserProto {
+interface UserArgs extends UserProto {
   primeiroNome: string;
   sobrenome: string;
   idade: number;
 }
 
-export interface UserProto {
+interface UserProto {
   nomeCompleto?: () => string;
   fazerAniversario?: () => boolean;
 }
 
-/*
-
-*/
+export type { UserArgs, UserType };
