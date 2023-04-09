@@ -1,19 +1,24 @@
-import { generico, reinaldo } from "./user.create.literal.instances.ts";
+import {
+  objArgsUser_Generico,
+  objArgsUser_Reinaldo,
+} from "./object_args_literal.user.ts";
 
 console.log(
-  generico,
+  objArgsUser_Generico,
   "\n",
-  reinaldo,
+  objArgsUser_Reinaldo,
   "\n",
   "A idade do user [ Reinaldo ] comecou com >> ",
-  reinaldo.idade,
+  objArgsUser_Reinaldo.idade,
   "\n",
-  generico.nomeCompleto?.(),
-  "\n",
-  reinaldo.nomeCompleto?.(),
-  "\n",
-  reinaldo.fazerAniversario?.(),
-  "\n",
-  reinaldo.fazerAniversario?.(),
-  reinaldo,
+  // OBS: ESTES METODOS PROTO VOU CONSEGUIR ACESSAR NO USER FINAL
+
+  // objArgsUser_Generico.nomeCompleto?.(),
+  // "\n",
+  // objArgsUser_Reinaldo.nomeCompleto?.(),
+  // "\n",
+  // objArgsUser_Reinaldo.fazerAniversario?.(),
+  // "\n",
+  // objArgsUser_Reinaldo.fazerAniversario?.(),
+  // objArgsUser_Reinaldo,
 );
