@@ -11,9 +11,3 @@ export const protoUser: UserProto = {
     return this.idade += 1
   }
 };
-
-export const protoUserReinaldo: UserProto = {
-  nomeCompleto(this: UserArgs): string {
-    return `isto é diferente neste ${this.primeiroNome} ${this.sobrenome}`;
-  },
-};
