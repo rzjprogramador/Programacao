@@ -1,7 +1,7 @@
 import { UserArgs, UserType } from "./user.contracts.ts";
 import { protoUser } from "./proto.user.ts";
 
-const userFactory = (u: UserArgs): UserType => {
+const userFactory = (u: UserArgs): UserArgs => {
   const user = Object.create(protoUser);
   user.primeiroNome = u.primeiroNome;
   user.sobrenome = u.sobrenome;
@@ -27,3 +27,18 @@ const user = (u: UserType) => {
 };
 
 export { user };
+
+// testers
+const obj1: UserArgs = {
+  primeiroNome: "reinaldo",
+  sobrenome: "zachars jr",
+  idade: 45,
+};
+const u1 = userFactory(obj1);
+console.log(u1);
+console.log("idade comecou com 45 ok >> ", u1.idade);
+console.log(u1.nomeCompleto?.());
+console.log(u1.fazerAniversario?.());
+console.log(u1.fazerAniversario?.());
+console.log("depois de 2 aniver a idade tem que ser 47 ok >> ", u1.idade);
+console.log(u1);
