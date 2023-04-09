@@ -16,7 +16,7 @@ const E1 = ({ c1, c2 }: E1Args) => {
   return e1;
 };
 
-// objeto_Com_Metodos_Proto
+// objeto_Com_Metodos_Proto 
 
 const objeto_Com_Metodos_Proto = {
   metodo1(this: E1Args): string {
