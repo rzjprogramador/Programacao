@@ -1,6 +1,6 @@
-import { Idade } from "./../object_values/idade/idade.ts";
-import { Nome } from "./../object_values/nome/nome.ts";
 // deno-lint-ignore-file no-explicit-any
+import { Idade } from "./object_values/idade/idade.ts";
+import { Nome } from "./object_values/nome/nome.ts";
 
 interface Entity1Model {
   nome: string;

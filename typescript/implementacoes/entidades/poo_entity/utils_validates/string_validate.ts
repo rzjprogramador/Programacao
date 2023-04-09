@@ -1,4 +1,4 @@
-// deno-lint-ignore-file valid-typeof
+// deno-lint-ignore-file valid-typeof ban-unused-ignore
 
 export function validateString(s: string) {
   if (!s) {
