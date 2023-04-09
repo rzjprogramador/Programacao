@@ -1,0 +1,13 @@
+# todas outras formas de fazer tecla lider
+
+definir_leader: {
+  sem_api: `g.mapleader = ',' -- definindo lider como virgula`,
+
+  com_api: `
+  // TEM QUE IMPORTAR PRIMEIRO a api set do vim : local set = vim.api.nvim_set_keymap
+-- Leader Lider : Definindo tecla lider : como espaco
+set('n', '<Space>', '', {})
+vim.g.mapleader = ' '
+options = { noremap = true }
+`,
+}

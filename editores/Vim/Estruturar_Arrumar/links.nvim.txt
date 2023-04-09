@@ -1,0 +1,5 @@
+
+melhores_configs_nvim:[
+  https://github.com/brainfucksec/neovim-lua/blob/main/nvim/lua/core/keymaps.lua,
+
+]
