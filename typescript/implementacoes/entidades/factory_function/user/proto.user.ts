@@ -2,7 +2,7 @@
 
 import { UserArgs, UserProto } from "./user.contracts.ts";
 
-export const protoUser: UserProto = {
+const protoUser: UserProto = {
   nomeCompleto(this: UserArgs): string {
     return `${this.primeiroNome} ${this.sobrenome}`;
   },
@@ -12,3 +12,5 @@ export const protoUser: UserProto = {
     return true;
   },
 };
+
+export { protoUser }
