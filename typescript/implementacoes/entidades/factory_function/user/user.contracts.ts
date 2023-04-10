@@ -1,6 +1,8 @@
-type UserType = UserArgs;
+import { RegisterPerson } from "./helpers/registers.ts";
 
-interface UserArgs extends UserProto {
+type TypeUser = ArgsUser & RegisterPerson;
+
+interface ArgsUser extends UserProto {
   primeiroNome: string;
   sobrenome: string;
   idade: number;
@@ -11,4 +13,4 @@ interface UserProto {
   fazerAniversario?: () => boolean;
 }
 
-export type { UserArgs, UserProto, UserType };
+export type { ArgsUser, TypeUser, UserProto };

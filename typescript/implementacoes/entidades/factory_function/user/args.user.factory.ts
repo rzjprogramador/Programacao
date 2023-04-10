@@ -1,7 +1,7 @@
-import { UserArgs } from "./user.contracts.ts";
+import { ArgsUser } from "./user.contracts.ts";
 import { protoUser } from "./proto.user.ts";
 
-const argsUserFactory = (u: UserArgs): UserArgs => {
+const argsUserFactory = (u: ArgsUser): ArgsUser => {
   const user = Object.create(protoUser);
   user.primeiroNome = u.primeiroNome;
   user.sobrenome = u.sobrenome;
@@ -9,6 +9,5 @@ const argsUserFactory = (u: UserArgs): UserArgs => {
 
   return user;
 };
-
 
 export { argsUserFactory };

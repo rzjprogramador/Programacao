@@ -7,7 +7,7 @@ const requestEntity = { nome: "nomeok", idade: 45 };
 Deno.test("nome", () => {
   const sutCreate = Entity1.create(requestEntity);
 
-  console.log(sutCreate);
+  // console.log("test: ", sutCreate);
 
   expect(sutCreate).toEqual(requestEntity);
 });

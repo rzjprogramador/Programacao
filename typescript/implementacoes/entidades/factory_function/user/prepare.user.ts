@@ -1,21 +1,13 @@
 import { argsUserFactory } from "./args.user.factory.ts";
 import { register } from "./helpers/registers.ts";
-import { UserType } from "./user.contracts.ts";
+import { saveUser } from "./save.repository.user.ts";
+import { ArgsUser, TypeUser } from "./user.contracts.ts";
 
-const prepareUser = (u: UserType) => {
+const prepareUser = (u: ArgsUser): TypeUser => {
   const args = argsUserFactory(u);
   const model = { ...args, ...register };
-  return model;
+  const save = saveUser(model);
+  return save;
 };
-
-// const saveUser = (u: UserType) => {
-//   const prepared = prepareUser(u);
-//   return prepared;
-// };
-
-// const user = (u: UserType) => {
-//   const save = saveUser(u);
-//   return save;
-// };
 
 export { prepareUser };

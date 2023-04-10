@@ -1,12 +1,13 @@
 // deno-lint-ignore-file no-prototype-builtins
-import { UserArgs } from "./user.contracts.ts";
+import { ArgsUser } from "./user.contracts.ts";
 import { argsUserFactory } from "./args.user.factory.ts";
 import { objArgsUser } from "./helpers/objs.args.user.ts";
 
 import { expect } from "https://deno.land/x/expect@v0.2.10/expect.ts";
 import { protoUser } from "./proto.user.ts";
+import { ConsoleTest } from "./helpers/unique_imports.ts";
 
-type InputArgsUserTest = UserArgs;
+type InputArgsUserTest = ArgsUser;
 
 const sut = function (i: InputArgsUserTest) {
   return argsUserFactory(i);
@@ -43,9 +44,8 @@ Deno.test("[argsUserFactory] devem conter e ser compativeis os {prototypes} das 
   expect(isPrototypes).toEqual(result);
   expect(isUniquePathMemory).toEqual(result);
 
-  // console.log("PROTO_OBJ É PROTO DO OBJ_CRIADO : ", isPrototypes);
-  // console.log(
-  //   "ESTAO NO MESMO ENDERECO MEMORIA : ",
+  ConsoleTest("test: ", isPrototypes);
+  // ConsoleTest("test: ",
   //   action1.fazerAniversario === action2.fazerAniversario,
   // );
 });
