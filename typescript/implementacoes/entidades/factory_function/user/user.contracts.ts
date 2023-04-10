@@ -1,6 +1,6 @@
-import { RegisterPerson } from "./helpers/registers.ts";
+import { IdentifiersType, importsUnique } from "../helpers/unique/unique_imports_app.ts";
 
-type TypeUser = ArgsUser & RegisterPerson;
+type TypeUser = ArgsUser & IdentifiersType;
 
 interface ArgsUser extends UserProto {
   primeiroNome: string;

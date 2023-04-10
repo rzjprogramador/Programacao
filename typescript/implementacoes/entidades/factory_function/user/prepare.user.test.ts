@@ -1,19 +1,20 @@
-import { expect } from "https://deno.land/x/expect@v0.2.10/expect.ts";
-
+import { importsUnique } from "./../helpers/unique/unique_imports_app.ts";
 import { TypeUser } from "./user.contracts.ts";
 import { prepareUser } from "./prepare.user.ts";
-import { objArgsUser } from "./helpers/objs.args.user.ts";
-import { register } from "./helpers/registers.ts";
-import { ConsoleTest } from "./helpers/unique_imports.ts";
+import { objArgsUser } from "../helpers/objs.args.user.ts";
+
+import { expect } from "https://deno.land/x/expect@v0.2.10/expect.ts";
 
 type InputPrepareUserTest = TypeUser;
+
+const { importRegisters, ConsoleTest } = importsUnique;
 
 const sut = function (i: InputPrepareUserTest) {
   return prepareUser(i);
 };
 
-const sutInput1 = { ...objArgsUser.user1, ...register };
-// const sutInput2 = { ...objArgsUser.user2, ...register };
+const sutInput1 = { ...objArgsUser.user1, ...importRegisters.identifiers };
+// const sutInput2 = { ...objArgsUser.user2, ...importRegisters.identifiers };
 
 Deno.test("[ prepareUser] deve conter e ser do tipo string o campo ID", () => {
   const where = sut(sutInput1);
@@ -21,7 +22,7 @@ Deno.test("[ prepareUser] deve conter e ser do tipo string o campo ID", () => {
   const tester = typeof actual === "string";
   const result = true;
 
-  ConsoleTest("É DO TIPO : ",typeof actual);
+  ConsoleTest("É DO TIPO : ", typeof actual);
 
   expect(tester).toEqual(result);
 });

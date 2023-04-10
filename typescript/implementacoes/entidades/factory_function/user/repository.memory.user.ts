@@ -1,4 +1,3 @@
-import { saveUser } from "./save.repository.user.ts";
 import { TypeUser } from "./user.contracts.ts";
 
 interface RepositoryUser {
@@ -12,7 +11,6 @@ const repositoryMemoryUser: RepositoryUser = {
 
   create(u: TypeUser) {
     const item = u;
-    // const item = saveUser(u);
     this._items?.push(item);
     return item;
   },
