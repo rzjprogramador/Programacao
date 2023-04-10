@@ -11,4 +11,4 @@ interface UserProto {
   fazerAniversario?: () => boolean;
 }
 
-export type { UserArgs, UserType };
+export type { UserArgs, UserProto, UserType };
