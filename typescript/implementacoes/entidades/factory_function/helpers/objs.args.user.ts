@@ -1,5 +1,11 @@
+import { ArgsUser } from "../user/user.contracts.ts";
 
-const objArgsUser = {
+type ObjArgsUser = {
+  user1: ArgsUser;
+  user2: ArgsUser;
+};
+
+const objArgsUser: ObjArgsUser = {
   user1: {
     primeiroNome: "reinaldo",
     sobrenome: "zachars jr",

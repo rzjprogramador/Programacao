@@ -26,7 +26,7 @@ Deno.test("[ repositoryMemoryUser] deve salvar os items no repo memory", () => {
   const items = sut?._items;
   const resultSutlength = items?.length;
 
-  ConsoleTest("OBJ USER CRIADO >>> ", where1);
+  // ConsoleTest("OBJ USER CRIADO >>> ", where1);
   // ConsoleTest("ITEMS REPO MEMORY USER >>> ", items);
 
   expect(resultSutlength).toEqual(2);
