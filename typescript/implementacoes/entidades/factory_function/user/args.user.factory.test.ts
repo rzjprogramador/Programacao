@@ -12,8 +12,17 @@ const sut = function (i: InputArgsUserTest) {
 
 const sutInput = objArgsUser;
 
-Deno.test("argsUserFactory", () => {
+Deno.test("[argsUserFactory] deve retornar os args enviados para user", () => {
+  const actual = sut(sutInput.user1);
+  expect(actual).toEqual(sutInput.user1);
+});
+
+Deno.test("[argsUserFactory] deve deve conter estas propriedades", () => {
   const action = sut(sutInput.user1);
-  console.log(action);
-  expect(action).toEqual(sutInput.user1);
+
+  const actual = action.primeiroNome;
+  const expected = "reinaldo";
+
+  expect(action).toHaveProperty("primeiroNome");
+  expect(actual).toEqual(expected);
 });
