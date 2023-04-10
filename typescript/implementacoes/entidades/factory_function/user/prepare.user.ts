@@ -1,29 +1,21 @@
-import { UserArgs, UserType } from "./user.contracts.ts";
-import { protoUser } from "./proto.user.ts";
-
-const userFactory = (u: UserArgs): UserArgs => {
-  const user = Object.create(protoUser);
-  user.primeiroNome = u.primeiroNome;
-  user.sobrenome = u.sobrenome;
-  user.idade = u.idade;
-
-  return user;
-};
+import { argsUserFactory } from "./args.user.factory.ts";
+import { register } from "./helpers/registers.ts";
+import { UserType } from "./user.contracts.ts";
 
 const prepareUser = (u: UserType) => {
-  const factory = userFactory(u);
-  const complet = { ...factory, id: "1" };
-  return complet;
+  const args = argsUserFactory(u);
+  const model = { ...args, ...register };
+  return model;
 };
 
-const saveUser = (u: UserType) => {
-  const prepared = prepareUser(u);
-  return prepared;
-};
+// const saveUser = (u: UserType) => {
+//   const prepared = prepareUser(u);
+//   return prepared;
+// };
 
-const user = (u: UserType) => {
-  const save = saveUser(u);
-  return save;
-};
+// const user = (u: UserType) => {
+//   const save = saveUser(u);
+//   return save;
+// };
 
-export { user, userFactory };
+export { prepareUser };

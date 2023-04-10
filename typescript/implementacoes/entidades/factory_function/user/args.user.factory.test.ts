@@ -1,6 +1,6 @@
 import { UserArgs } from "./user.contracts.ts";
 import { argsUserFactory } from "./args.user.factory.ts";
-import { objArgsUser } from "./aux/objs.args.user.ts";
+import { objArgsUser } from "./helpers/objs.args.user.ts";
 
 import { expect } from "https://deno.land/x/expect@v0.2.10/expect.ts";
 
