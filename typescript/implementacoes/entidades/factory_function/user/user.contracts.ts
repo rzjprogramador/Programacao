@@ -1,4 +1,4 @@
-import { IdentifiersType, importsUnique } from "../helpers/unique/unique_imports_app.ts";
+import { IdentifiersType } from "../helpers/unique/unique_imports_app.ts";
 
 type TypeUser = ArgsUser & IdentifiersType;
 
