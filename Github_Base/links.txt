@@ -1,0 +1,10 @@
+
+git_branchs : [
+  https://www.freecodecamp.org/portuguese/news/git-switch-branch-como-alternar-branches-no-git/#:~:text=Para%20criar%20uma%20branch%20no,branch%20de%20onde%20voc%C3%AA%20saiu.&text=Aqui%2C%20voc%C3%AA%20pode%20ver%20uma,%2Drecurso%20%2C%20origin%C3%A1ria%20de%20master%20.
+
+],
+
+git_merge: [
+  https://git-scm.com/book/pt-br/v2/Branches-no-Git-O-b%C3%A1sico-de-Ramifica%C3%A7%C3%A3o-Branch-e-Mesclagem-Merge
+  
+]
