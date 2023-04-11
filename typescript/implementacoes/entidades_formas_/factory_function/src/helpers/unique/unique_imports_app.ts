@@ -4,17 +4,17 @@ import {
   ImportRegistersType,
 } from "../modules_rzj_enviar_github/registers.ts";
 import {
-  ConsoleTestMod,
-  ConsoleTestType,
+  LogTest,
+  LogTestType,
 } from "./../../helpers/modules_rzj_enviar_github/modules_rzj_enviar_github.ts";
 
 interface ImportsUnique {
-  ConsoleTest: ConsoleTestType;
+  ConsoleTest: LogTestType;
   importRegisters: ImportRegistersType;
 }
 
 const importsUnique: ImportsUnique = {
-  ConsoleTest: ConsoleTestMod,
+  ConsoleTest: LogTest,
   importRegisters: importRegisters,
 };
 

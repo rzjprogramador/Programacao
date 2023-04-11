@@ -1,4 +1,4 @@
-import { IdentifiersType } from "../helpers/unique/unique_imports_app.ts";
+import { IdentifiersType } from "../../helpers/modules_rzj_enviar_github/registers.ts";
 
 type TypeUser = ArgsUser & IdentifiersType;
 

@@ -1,4 +1,4 @@
-import { ArgsUser } from "../user/user.contracts.ts";
+import { ArgsUser } from "../../../entitys/user/user.contracts.ts";
 
 type ObjArgsUser = {
   user1: ArgsUser;

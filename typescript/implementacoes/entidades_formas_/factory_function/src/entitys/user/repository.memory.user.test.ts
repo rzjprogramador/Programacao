@@ -4,8 +4,8 @@ import { expect } from "https://deno.land/x/expect@v0.2.10/expect.ts";
 import { ArgsUser } from "./user.contracts.ts";
 import { prepareUser } from "./prepare.user.ts";
 import { repositoryMemoryUser } from "./repository.memory.user.ts";
-import { importsUnique } from "../helpers/unique/unique_imports_app.ts";
-import { objArgsUser } from "../helpers/objs.args.user.ts";
+import { importsUnique } from "../../helpers/unique/unique_imports_app.ts";
+import { objArgsUser } from "../../helpers/object_use/user/args.entity.user.ts";
 
 const { ConsoleTest } = importsUnique;
 
