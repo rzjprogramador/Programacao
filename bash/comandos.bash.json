@@ -1,0 +1,6 @@
+{
+  "abrir_explorer_pasta_via_terminal": "`xgd-open .`",
+  "parar": {
+    "parar_processo_De_comando_no_terminal": "ctrl+z"
+  }
+}
